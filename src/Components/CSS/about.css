@@ -1,0 +1,215 @@
+p {
+    font-size: small;
+}
+
+.AboutUs {
+    background-color: #EDEDE9;
+    padding: 10px 0;
+}
+
+.AboutUs .about-us {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.AboutUs .about-us .row {
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.AboutUs .about-us .row .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs .about-us .row .col-md-4 img {
+    width: auto;
+    height: 300px;
+    position: relative;
+    top: -70px;
+    left: -70px;
+    transition: 0.5s;
+    box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.49);
+}
+.AboutUs .about-us .row .col-md-4 img:hover{
+    transform: scale(1.06);
+}
+
+.storyMission {
+    margin: 80px 0;
+    height: 80vh;
+    position: relative;
+}
+
+.storyMission .row {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ourStory .ourStoryContent {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ourMission .ourStoryContent {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.storyMission .ourStoryContent .row {
+    background-color: white;
+    height: 80%;
+}
+
+.storyMission .ourStoryContent .row .col-md-8 {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.storyMission .ourStoryContent .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyMission .ourStoryContent .col-md-4 img {
+    height: auto;
+    width: 100%;
+
+}
+.ourMember{
+    padding: 60px 0;
+    background-color: white;
+}
+
+.ourMember .col-md-4 {
+    padding: 20px 40px;
+}
+
+.ourMember img {
+    width: 100%;
+    height: auto;
+    transition: .6s;
+}
+
+.ourMember .memberIdentity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.ourMember .card{
+cursor: pointer;
+box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.358);
+}
+.ourMember .card .memberImg{
+    overflow: hidden;
+    position: relative;
+}
+.ourMember .card .memberImg .socialIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #54AFA6;
+    opacity: 0;
+    transition: .6s;
+}
+.ourMember .card .memberImg .socialIcon .fa-brands{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+
+}
+.ourMember .card .memberImg .socialIcon .fa-brands:hover{
+    color:rgb(65, 65, 65);
+}
+.ourMember .memberIdentity{
+    padding: 8px 0;
+}
+.ourMember .memberIdentity h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.ourMember .memberIdentity span {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #54AFA6;
+}
+.ourMember .card:hover img{
+    transform: scale(1.1);
+    filter: blur(4px);
+}
+.ourMember .card:hover .socialIcon{
+   opacity: 1;
+}
+
+@media screen and (max-width:992px) {
+    .AboutUs .about-us .row {
+        width: 80%;
+    }
+
+    .ourMember .col-md-4 {
+        padding:20px 0px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .AboutUs .about-us .row .col-md-4 img{
+        box-shadow: 0px 15px 20px 1px rgba(0, 0, 0, 0.358);
+        margin-bottom:30px;
+        }
+    .AboutUs .about-us .row {
+        width: 100%;
+    }
+    .ourMember .col-md-4 {
+        padding:20px 30px;
+    }
+
+    .AboutUs .about-us {
+        padding: 20px 10px;
+    }
+
+    .AboutUs .about-us .row .col-md-4 img {
+        position: unset;
+    }
+
+    .storyMission {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .storyMission .ourStoryContent .row {
+        height: auto;
+    }
+
+    .storyMission .ourStoryContent {
+        position: unset;
+        width: 100%;
+    }
+
+    .storyMission {
+        margin: 0;
+    }
+}

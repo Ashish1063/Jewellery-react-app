@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+span {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+.header .row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header .row .col-md-3 img {
+    height: 50px;
+    width: auto;
+}
+
+.header .row .col-md-6 .socialIcons svg {
+    margin: 0 5px;
+}
+
+.header .row .HeadIconsMobView {
+    display: none !important;
+}
+
+.header .row .col-md-2 .icon {
+    height: 22px;
+    width: 22px;
+    margin-left: 4px;
+    border-radius: 6px;
+    background-color: #54B0A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .Navbar .navbar {
+    background-color: #54B0A7;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.header .Navbar .navbar .navbar-nav a {
+
+    font-size: 18px;
+}
+
+.header .Navbar .navbar .navbar-nav .nav-link {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.header .Navbar .navbar .navbar-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .Navbar .navbar .navbar-nav .nav-item svg {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.6s;
+    color: #54B0A7;
+
+}
+
+.header .Navbar .navbar .navbar-nav .nav-link:hover {
+    background-color: #54B0A7;
+    color: white;
+}
+
+.header .Navbar .navbar .navbar-nav .nav-link:hover svg {
+    bottom: -40px;
+    opacity: 1;
+}
+
+.header .row .col-md-3 .d-flex {
+    align-items: center;
+    justify-content: right;
+}
+
+.header .row .col-md-2 .d-flex .icon .fa-solid {
+    font-size: 12px;
+    color: white;
+}
+
+.header .row .col-md-3 .d-flex .icon {
+    transition: 1;
+}
+
+.header .row .col-md-3 .d-flex .icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+    .header .Navbar .navbar .navbar-nav .nav-item svg {
+        display: none;
+    }
+
+    .header .Navbar .navbar .container-fluid {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .header .row .col-md-3 img {
+        height: 30px;
+    }
+
+    .header .row .header1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .header .row .HeadIconsMobView {
+        display: unset !important;
+        padding: 0 !important;
+
+    }
+
+    .header .row .col-md-4 .d-flex {
+        justify-content: end;
+    }
+
+    .header .row .header2 .socialIcons, .Navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .header .row .header2 .Navbar .navbar {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .header .HeadIconsPCView {
+       position: absolute;
+      
+    }
+}

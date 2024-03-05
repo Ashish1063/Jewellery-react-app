@@ -1,0 +1,114 @@
+.Detail .jewelleryDetail-Image {
+    background-color: #edede9;
+}
+
+.Detail .jewelleryImage {
+    padding: 30px;
+}
+
+.Detail .jewelleryImage div {
+    height: 450px;
+    width: 100%;
+}
+
+.Detail .jewelleryImage div img {
+    height: 100%;
+    width: 100%;
+}
+
+.Detail .carousel .thumb {
+    height: 80px;
+}
+
+.Detail .carousel .thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.Detail .row .jewelleryDetail .row {
+    background-color: white;
+    margin: 30px 10px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.Detail .row .jewelleryDetail .icon {
+    background: #54B0A7;
+   width: 30px;
+   height: 32px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.Detail .row .jewelleryDetail .icon .fa-solid {
+    color: white;
+}
+
+.Detail .row .jewelleryDetail .icon:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 1px 15px 25px rgba(0, 0, 0, 0.306);
+}
+
+.Detail .BasicDetail {
+    padding-right: 30px;
+}
+
+.Detail .diamondDetail {
+    padding-left: 30px;
+}
+.more-details p{
+    text-align: justify;
+}
+.more-detail-img{
+   height: 300px;
+}
+.more-detail-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width:1000px) {
+    .Detail .carousel .thumb {
+        height: 60px;
+        width: 60px !important;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    .jewelleryDetail {
+        margin-top: 50px;
+    }
+
+    .Detail .row .jewelleryDetail .row {
+        margin: 30px 0;
+        padding: 15px;
+    }
+
+    .contactDetail .row {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .Detail .jewelleryImage div {
+        height: 300px;
+       
+    }
+    .Detail .jewelleryImage{
+        padding: 0;
+    }
+    .carousel .thumbs-wrapper{
+        margin: 20px 0 !important;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .contactDetail span {
+        font-size: 12px;
+    }
+
+    .contactDetail .col-2 {
+        margin: 0;
+        padding: 0;
+    }
+}

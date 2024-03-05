@@ -1,0 +1,76 @@
+.Contact .row{
+    margin: 0;
+}
+.Contact .UpperContact{
+    height: auto;
+    background-image: url('../Images/Contact/contact5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.Contact .UpperContact .row .col-md-3{
+    text-align: center;
+    padding:30px;
+    transition: 0.5s;
+
+}
+.Contact .UpperContact .row .col-md-3 .card{
+    border: none;
+    height: 100%;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.505);
+}
+.Contact .UpperContact .row .col-md-3 .card .fa-solid, .fa-brands{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.Contact .UpperContact .row .col-md-3 .fa-solid, .fa-brands{
+    transition: 0.5s;
+}
+.Contact .UpperContact .row .col-md-3:hover{
+    background-color:#54b0a758 ;
+    cursor: pointer;
+}
+.Contact .UpperContact .row .col-md-3:hover p{
+   font-weight: 600;
+}
+.Contact .UpperContact .row .col-md-3:hover .fa-solid {
+    transform: rotateY(360deg);
+}
+.Contact .UpperContact .row .col-md-3:hover .fa-brands{
+    transform: rotateY(360deg);
+}
+.Contact .UpperContact .row .col-md-3 p{
+    font-size: 16px;
+}
+.BottomContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BottomContact .row{
+    width: 600px;
+}
+@media screen and (max-width:1000px){
+    .Contact .UpperContact .row .col-md-3{
+        padding: 10px;
+    }
+} 
+@media screen and (max-width:770px) {
+    .Contact .UpperContact{
+        height: auto;
+    }
+    .Contact .UpperContact .row .col-md-3{
+        padding:30px;
+     
+    }
+    .BottomContact .row{
+        width: 80%;
+    }
+}

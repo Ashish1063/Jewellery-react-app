@@ -1,0 +1,50 @@
+.policy .row {
+    margin: 0;
+    padding: 0;
+}
+.policy .policyUpper {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.policyUpper h1 {
+    font-size: 50px;
+}
+
+.policyBottom {
+    padding: 50px 0;
+    background-color: #f9f9f5;
+    border-bottom: 0.5px solid black;
+}
+
+.policyBottom span {
+    font-size: 16px;
+    display: flex;
+}
+
+.policyBottom span p {
+    margin-left: 5px;
+}
+
+.policyBottom .card {
+    border: none;
+    margin: 40px 0;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:770px) {
+    .policy .policyUpper {
+        height: auto;
+    }
+
+    .policy .policyUpper .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .policy .policyUpper h1 {
+        font-size: 30px;
+    }
+}
