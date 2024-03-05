@@ -1,5 +1,5 @@
-import React from 'react'
-import '../CSS/home.css'
+import React from 'react';
+import '../CSS/home.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +9,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import { Link } from 'react-router-dom';
 import Banner from './Home/Banner';
 import Category from './Home/Category';
 import Collection from './Home/Collection';
@@ -311,7 +310,7 @@ const Home = () => {
                         <h1>Grand Luxury Jewellery Collection</h1>
                         <span>New in our shop</span>
                         <div className="button">
-                            <a href="">Discover more
+                            <a href="#">Discover more
                                 <span></span>
                                 <span></span>
                                 <span></span>
